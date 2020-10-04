@@ -11,4 +11,4 @@ COPY scan_unmerged_branches.py /app/
 # TESTS
 # 1. checkout this repo and scan it
 RUN git clone ${REPOURL}
-RUN /app/scan_unmerged_branches.py ${MAINBRANCH} /app/${REPONAME}
+RUN python /app/scan_unmerged_branches.py ${MAINBRANCH} /app/${REPONAME}
